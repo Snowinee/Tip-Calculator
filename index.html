@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e01b37056.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Tip Calculator</h1>
+    </header>
+
+    <main>
+        <div class="container">
+
+
+            <div class="form">
+                <label for="billTotal">Bill total</label>
+                <input type="number" name="Bill Total" id="billTotal">
+            </div>
+
+            <div class="form">
+                <label for="tip">Tip</label>
+                <input type="number" name="Tip Amount" id="tipAmount">
+            </div>
+
+            <div class="bottomContainer">
+                <div class="people">
+                    <label for="people">People</label>
+                    <div class="controls">
+                        <i id="addBtn" class="fa-solid fa-circle-plus"></i>
+                        <p id="peopleAmount"></p>
+                        <i id="minusBtn" class="fa-solid fa-circle-minus"></i>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <label for="total">Total Per Person</label>
+                    <p>$<span id="totalAmount"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

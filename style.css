@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightsalmon;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    height: 300px;
+    box-shadow: 2px 2px 30px 1px gray;
+    padding: 20px 10px;
+    margin: 120px auto 0 auto;
+    position: relative;
+}
+
+.bottomContainer {
+    margin-top: 20px;
+    color: brown;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    left: 20px;
+}
+
+.bottomContainer > .people {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 3px;
+}
+
+.bottomContainer > .people i {
+    font-size: 1.5rem;
+}
+
+.bottomContainer label {
+    font-weight: 600;
+    align-self: center;
+}
+
+.bottomContainer > .people > .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottomContainer > .total {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomContainer > .total > p {
+    text-align: center;
+}
+
+
+.form {
+    max-width: 250px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+
+.form:nth-child(1) {
+    margin-top: 50px;
+}
+
+.form label {
+    font: 600;
+    color: brown;
+}
+
+.form input[type=number] {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
